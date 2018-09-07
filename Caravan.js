@@ -33,7 +33,8 @@ OregonH.Caravan.updateWeight = function(){
     }
 
     if(droppedGuns){
-        this.ui.notify('Left ' +droppdedGuns+ ' guns behind', 'negative');
+       this.ui.notify('Left ' +droppdedGuns+ ' guns behind', 'negative');
+       console.log('Left ' +droppdedGuns+ ' guns behind', 'negative');
     }
 
     while(this.food && this.capacity <= this.weight){
@@ -43,7 +44,8 @@ OregonH.Caravan.updateWeight = function(){
     }
 
     if(droppedFood){
-        this.ui.notify('Left '+droppedFood+ ' food provisions behind', 'negative');
+       this.ui.notify('Left '+droppedFood+ ' food provisions behind', 'negative');
+       console.log('Left '+droppedFood+ ' food provisions behind', 'negative');
     }
 };
 
