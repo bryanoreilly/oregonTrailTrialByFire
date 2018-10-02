@@ -124,7 +124,10 @@ OregonH.Game.updateGame = function(){
         return;
     }
 
-    //random events logic...
+    //random events
+    if(Math.random() <= OregonH.EVENT_PROBABILITY){
+        this.eventManager.generateEvent();
+    }
 
 };
 
